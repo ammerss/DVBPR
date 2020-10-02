@@ -1,7 +1,7 @@
 from __future__ import division
 import os
 import time
-import queue
+import queue 
 import threading
 from PIL import Image
 from io import StringIO
@@ -74,7 +74,7 @@ class DCGAN(object):
         self.input_fname_pattern = input_fname_pattern
         self.checkpoint_dir = checkpoint_dir
 
-        _,_,_,self.data,_,_=np.load('../'+self.dataset_name)
+        _,_,_,self.data,_,_=np.load('../'+self.dataset_name,allow_pickle=True)
 
         self.c_dim=3
 
