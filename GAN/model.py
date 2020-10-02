@@ -4,7 +4,7 @@ import time
 import queue
 import threading
 from PIL import Image
-from cStringIO import StringIO
+from io import StringIO
 import math
 from glob import glob
 import tensorflow as tf
