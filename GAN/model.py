@@ -1,7 +1,7 @@
 from __future__ import division
 import os
 import time
-import queue 
+import queue as Queue
 import threading
 from PIL import Image
 from io import StringIO
